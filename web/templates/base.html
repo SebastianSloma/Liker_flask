@@ -8,10 +8,7 @@
 		<title>{% block title %}{% endblock %}</title>
 	</head>
 	<body>
-		{% extends "nav.html" %}
-		
-
-		
+		{% include "nav.html" %}
 		
 		<div class="container">
 			{% block content %}{% endblock %}
