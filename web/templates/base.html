@@ -12,6 +12,7 @@
 		/>
 
 		<title>{% block title %}{% endblock %}</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
 	</head>
 	<body>
 		{% include "nav.html" %}
@@ -41,5 +42,9 @@
 			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
 			crossorigin="anonymous"
 		></script>
+		<script
+		type="text/javascript"
+		src="{{ url_for('static', filename='index.js')}}"
+	  ></script>
 	</body>
 </html>
